@@ -3,94 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TOBY - L'avenir des Memecoins</title>
+    <title>TOBY - Bienvenue</title>
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #f5f5dc; /* Blanc crème */
+            color: #b8230f; /* Rouge par défaut pour tout le texte */
             margin: 0;
             padding: 0;
         }
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        .main-content {
+        .content-box {
+            background-color: #ffffff; /* Couleur de fond blanche */
+            border: 2px solid #00008b; /* Bordure bleue foncée */
+            border-radius: 10px; /* Coins arrondis */
             padding: 20px;
-            background-color: #fff;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour effet de profondeur */
+            position: relative; /* Pour positionner les icônes à l'intérieur du cadre */
         }
-        .section-title {
-            color: #4CAF50;
-        }
-        footer {
+        h1 {
+            color: #b8230f; /* Rouge */
             text-align: center;
-            padding: 10px 0;
-            background-color: #333;
-            color: #fff;
+        }
+        .catchphrase {
+            text-align: center;
+            font-size: 1.5em; /* Augmenter la taille de la police */
+            color: #b8230f; /* Rouge */
+            margin-top: 10px;
+        }
+        .photo-box {
+            display: flex;
+            justify-content: center; /* Centrer la boîte horizontalement */
+            align-items: center; /* Centrer verticalement */
+            margin-top: 10px;
+            background: #ffffff; /* Fond blanc pour la boîte */
+            border: 2px solid #00008b; /* Bordure bleue foncée pour la boîte */
+            border-radius: 10px; /* Coins arrondis pour la boîte */
+            padding: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ombre tout autour de la boîte */
+            width: 80%; /* Limiter la largeur de la boîte */
+            margin-left: auto; /* Centrer horizontalement */
+            margin-right: auto; /* Centrer horizontalement */
+            box-sizing: border-box; /* Inclure les bordures et le padding dans la largeur */
+        }
+        .photo-box img {
+            max-width: 100%; /* Ajuster la taille de l'image selon les préférences */
+            height: auto; /* Conserver le ratio d'aspect de l'image */
+            border-radius: 10px;
+        }
+        p {
+            color: #b8230f; /* Appliquer le rouge sélectionné aux paragraphes */
+        }
+        .comments {
             margin-top: 20px;
+        }
+        .social-icons {
+            position: absolute; /* Positionnement absolu pour les icônes */
+            top: 20px; /* Ajustez selon vos préférences */
+            right: 20px; /* Ajustez selon vos préférences */
+            display: flex;
+            flex-direction: row; /* Pour les afficher côte à côte */
+            gap: 20px; /* Espacement entre les icônes */
+        }
+        .social-icons a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Coins arrondis pour les icônes */
+            overflow: hidden; /* Masquer les débordements pour un rendu propre */
+        }
+        .social-icons img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Couvrir l'ensemble de la zone */
+        }
+        .features {
+            margin-top: 20px;
+        }
+        .feature-box {
+            background-color: #d2f0f5; /* Couleur de fond grise claire pour la boîte */
+            border: 1px solid #00008b; /* Bordure bleue foncée */
+            border-radius: 10px; /* Coins arrondis */
+            padding: 15px;
+            margin-bottom: 10px; /* Espacement entre les boîtes */
+        }
+        h2 {
+            text-align: center; /* Centrer le texte */
+        }
+        .contract-address {
+            text-align: center; /* Centrer le texte */
+            font-size: 1.2em; /* Augmenter la taille de la police */
+            margin-top: 10px;
+        }
+        .feature-box {
+            margin-top: 20px;
+        }
+        .feature-box p {
+            font-size: 1em;
+            color: #b8230f;
+        }
+        .ca p {
+            text-align: center; /* Centrer le texte */
+            font-size: 2em;
+            color: #b8230f;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur le site officiel de TOBY</h1>
-    </header>
-    <nav>
-        <a href="#">Accueil</a>
-        <a href="#">À propos</a>
-        <a href="#">Acheter TOBY</a>
-        <a href="#">Communauté</a>
-        <a href="#">Contact</a>
-    </nav>
     <div class="container">
-        <div class="main-content">
-            <h2 class="section-title">L'avenir des Memecoins est là!</h2>
-            <p><strong>TOBY</strong> est plus qu'un simple memecoin. C'est une communauté, une révolution et une aventure amusante dans le monde des crypto-monnaies. Rejoignez-nous dans cette nouvelle ère où l'humour et l'innovation se rencontrent.</p>
-            <h2 class="section-title">Pourquoi choisir TOBY?</h2>
-            <ul>
-                <li><strong>Communauté engagée</strong>: Rejoignez des milliers d'autres passionnés de crypto-monnaies qui partagent votre enthousiasme pour les memecoins.</li>
-                <li><strong>Technologie avancée</strong>: Profitez de la sécurité et de la transparence offertes par notre blockchain de pointe.</li>
-                <li><strong>Potentiel de croissance</strong>: TOBY n'est pas seulement une blague - c'est un investissement avec un potentiel énorme.</li>
-            </ul>
-            <h2 class="section-title">Comment obtenir TOBY?</h2>
-            <ol>
-                <li><strong>Acheter</strong>: Achetez des TOBY sur les principales plateformes d'échange.</li>
-                <li><strong>Miner</strong>: Participez au processus de minage et gagnez des TOBY en contribuant à la sécurité du réseau.</li>
-                <li><strong>Participer</strong>: Rejoignez nos concours et événements pour avoir une chance de gagner des TOBY gratuitement.</li>
-            </ol>
-            <h2 class="section-title">Rejoignez la Révolution TOBY</h2>
-            <p>Ne manquez pas votre chance de faire partie de quelque chose de grand. Suivez-nous sur les réseaux sociaux pour rester informé des dernières nouvelles et mises à jour. Participez à notre forum communautaire et échangez avec d'autres passionnés de TOBY.</p>
+        <div class="content-box">
+            <div class="social-icons">
+                <a href="https://t.me/+CBp1cspm6M5hMzU0" target="_blank">
+                    <img src="photo/telegram_15015947.png" alt="Telegram">
+                </a>
+                <a href="https://x.com/FrenchTobyWoof" target="_blank">
+                    <img src="photo/social-media_14417460.png" alt="Twitter">
+                </a>
+            </div>
+            <h1>Join the TOBY revolution</h1>
+            <p class="catchphrase">Where humor meets innovation in the world of crypto!</p> <!-- Phrase d'accroche -->
+            <div class="photo-box">
+                <img src="photo/toby_occulus.PNG" alt="Toby!">
+            </div>
+            <div class="features">
+                <h2>Features</h2>
+                <div class="feature-box">
+                    <p><strong>Innovative Community Project</strong>: $TOBY Coin is more than just a cryptocurrency; it’s a movement powered by a passionate and engaged community. Join us in revolutionizing the crypto space with a project based on humor, creativity, and innovation.</p>
+                </div>
+                <div class="feature-box">
+                    <p><strong>High Performance:</strong> TOBY Coin ensures fast transaction times and low fees, making it a reliable choice for everyday use.</p>
+                </div>
+                <div class="feature-box">
+                    <p><strong>Security:</strong> With robust security measures in place, your transactions and personal information are always protected.</p>
+                </div>
+                <div class="feature-box">
+                    <p><strong>Community Driven:</strong> Our project thrives on the support and engagement of our community. We are constantly evolving and growing thanks to your feedback.</p>
+                </div>
+                <div class="feature-box">
+                    <p><strong>Innovation:</strong> We are always looking for new ways to improve and innovate in the crypto space. Stay tuned for exciting updates and developments.</p>
+                </div>
+                <div class="feature-box">
+                    <p class="contract-address">0xE8b18c6B6B634e8bAF13a80951ECE3E981Eb38F3</p>
+
+                <h2>How to buy TOBY Coin ?</h2>
+                <div class="feature-box">
+                    <ol>
+                        <li>Connect your wallet to pepu's address : <a href="https://pepeunchained.com/" target="_blank">PEPE UNCHAINED</a></li>
+                        <li>Transfer some coins to Ethereum's Layer 2 bridge.</li>
+                        <li>Go to Pump Pad !</li>
+                        <li>Enter the contract address above in the search field.</li>
+                        <li>Buy it !</li>
+                    </ol>
+                </div>
+
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2025 TOBY. Tous droits réservés.</p>
-    </footer>
 </body>
 </html>
